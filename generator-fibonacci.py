@@ -4,9 +4,7 @@ def fibonacci(n):
 
     for i in range(n):
         yield a
-        c = a + b
-        a = b
-        b = c
+        a, b = b, a + b
 
 
 size = None
